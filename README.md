@@ -31,22 +31,22 @@
 ### Dependencies & Libraries used
 
 - Install core dependencies
-** npm install next react react-dom **
+**`npm install next react react-dom`**
 
 - Apollo Client & GraphQL
-npm install @apollo/client graphql
+**`npm install @apollo/client graphql`**
 
 - Apollo support for Next.js App Router
-npm install @apollo/experimental-nextjs-app-support @apollo/client-integration-nextjs
+**`npm install @apollo/experimental-nextjs-app-support @apollo/client-integration-nextjs`**
 
 - Bootstrap and related UI libraries
-npm install bootstrap react-bootstrap react-icons
+**`npm install bootstrap react-bootstrap react-icons`**
 
 - TypeScript and type definitions
-npm install --save-dev typescript @types/react @types/react-dom @types/node
+**`npm install --save-dev typescript @types/react @types/react-dom @types/node`**
 
 - (Optional) Initialize TypeScript if not already done
-npx tsc --init
+**`npx tsc --init`**
 
 
 ---
