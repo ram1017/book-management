@@ -1,0 +1,44 @@
+type BookDto {
+  title: String!
+  author: String!
+  publicationDate: String!
+  isbn: String!
+  genre: String!
+  rating: Int!
+  coverImage: String
+  uniqueId: String!
+}
+
+type BookDetailsDto {
+  id: String
+  title: String!
+  author: String!
+  publicationDate: String!
+  isbn: String!
+  genre: String!
+  rating: Int!
+  uniqueId: String!
+  coverImage: String
+  description: String
+  previewLink: String
+  pageCount: Int
+}
+
+type Query {
+  allBooks: [BookDto!]!
+  bookByUniqueId(uniqueId: String!): BookDetailsDto!
+}
+
+type Mutation {
+  addBook(
+    title: String!
+    author: String!
+    publicationDate: String!
+    isbn: String!
+    genre: String!
+    rating: Int!
+    coverImage: String
+  ): Boolean!
+
+  deleteBook(uniqueId: String!): String!
+}
