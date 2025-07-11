@@ -235,6 +235,7 @@ Response:
 
 ```
 # MongoDb Schema
+```bash
 Each book in this project is stored in a single collection.
 Database: bookdb
 Collection: books
@@ -250,9 +251,9 @@ Collection: books
   "uniqueId": "string (e.g., B-001)",
   "coverImage": "string (Base64 or image URL)"
 }
-
+```
 # Project Folder Structure
-
+```bash
 The project has two main parts:
 
 * bookapp/: Spring Boot backend
@@ -303,3 +304,4 @@ book-management/
 │   └── README.md                   # Frontend readme (if separate)
 
 └── README.md                       # Root README
+```
