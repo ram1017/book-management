@@ -28,9 +28,9 @@
 
 *Download the project as separate folder for frontend and backend and open them using VSCode, IntelliJ, etc...*  
 
-### Dependencies & Libraries used
+ Dependencies & Libraries used
 
-~Frontend  
+### Frontend  
 Node.js must be installed locally  
 
 - Next.js 15  
@@ -59,7 +59,7 @@ Node.js must be installed locally
   **`npm run dev`**
 
 
-~Backend  
+### Backend  
 Java 17+ and Maven should be installed in the local system
 
 - spring-boot-starter-data-mongodb  
