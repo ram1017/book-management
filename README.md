@@ -28,7 +28,7 @@
 
 *Download the project as separate folder for frontend and backend and open them using VSCode, IntelliJ, etc...*  
 
- Dependencies & Libraries used
+### Dependencies & Libraries used
 
 ### Frontend  
 Node.js must be installed locally  
