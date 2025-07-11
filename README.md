@@ -136,6 +136,8 @@ query {
     pageCount
   }
 }
+
+```
 ### Mutations
 
 mutation {
@@ -153,7 +155,9 @@ mutation {
 mutation {
   deleteBook(uniqueId: "B-001")
 }
-REST API Endpoints
+```
+# REST API Endpoints
+```
 (Also available for experimental purposes.)
 
 1. Create a Book
@@ -190,8 +194,6 @@ Method: GET
 URL: /books
 
 Response:
-
-
 [
   {
     "title": "The Alchemist",
@@ -231,7 +233,7 @@ URL: /books/{uniqueId}
 Response:
 204 No Content
 
-
+```
 # MongoDb Schema
 Each book in this project is stored in a single collection.
 Database: bookdb
