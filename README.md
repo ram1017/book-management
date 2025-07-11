@@ -31,7 +31,7 @@
 ### Dependencies & Libraries used
 
 - Install core dependencies
-npm install next react react-dom
+** npm install next react react-dom **
 
 - Apollo Client & GraphQL
 npm install @apollo/client graphql
