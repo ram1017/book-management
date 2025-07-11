@@ -139,7 +139,7 @@ query {
 
 ```
 ### Mutations
-
+```graphql
 mutation {
   addBook(
     title: "1984",
