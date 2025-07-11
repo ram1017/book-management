@@ -30,23 +30,24 @@
 
 ### Dependencies & Libraries used
 
-### Frontend  
-Node.js must be installed locally  
+- Install core dependencies
+npm install next react react-dom
 
-- Next.js 15  
-  `npm install next`  
-- React 19  
-  `npm install react react-dom`  
-- Apollo Client  
-  `npm install @apollo/client graphql`  
-- GraphQL  
-  (already installed above with Apollo)  
-- Bootstrap 5  
-  `npm install bootstrap`  
-- React Bootstrap  
-  `npm install react-bootstrap`  
-- React Icons  
-  `npm install react-icons`  
+- Apollo Client & GraphQL
+npm install @apollo/client graphql
+
+- Apollo support for Next.js App Router
+npm install @apollo/experimental-nextjs-app-support @apollo/client-integration-nextjs
+
+- Bootstrap and related UI libraries
+npm install bootstrap react-bootstrap react-icons
+
+- TypeScript and type definitions
+npm install --save-dev typescript @types/react @types/react-dom @types/node
+
+- (Optional) Initialize TypeScript if not already done
+npx tsc --init
+
 
 ---
 
