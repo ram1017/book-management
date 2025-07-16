@@ -16,7 +16,7 @@ export default function BookDetailsClient({ initialData }: { initialData: any })
   const { data, loading, error } = useQuery(GET_BOOK_BY_ID, {
    variables: { uniqueId: params.id },
 
-    skip: !!initialData,
+      fetchPolicy: "cache-and-network",
   });
 
   useEffect(() => {
