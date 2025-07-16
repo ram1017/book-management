@@ -1,20 +1,17 @@
+
+"use client";
+
+import { ApolloProvider } from "@apollo/client";
+import client from "@/lib/apolloClient";
 import "./globals.css";
-import { Providers } from "./providers";
 
-export const metadata = {
-  title: "Book Management",
-  description: "Manage your book collection",
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <Providers>{children}</Providers>
+        <ApolloProvider client={client}>
+          {children}
+        </ApolloProvider>
       </body>
     </html>
   );
