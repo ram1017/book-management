@@ -21,7 +21,7 @@ interface Book {
 export default function BookListClient({ initialData }: { initialData: any }) {
   const [hydratedData, setHydratedData] = useState(initialData);
   const { data, refetch } = useQuery(GET_ALL_BOOKS, {
-    skip: !!initialData,
+    fetchPolicy: "cache-and-network",
   });
 
   useEffect(() => {
