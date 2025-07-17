@@ -73,11 +73,28 @@ export default function BookListClient({ initialData }: { initialData: any }) {
   );
 
   const sorted = [...filtered].sort((a, b) => {
-    if (!sortField) return 0;
-    const aVal = a[sortField as keyof Book];
-    const bVal = b[sortField as keyof Book];
-    return aVal < bVal ? (sortOrder === "asc" ? -1 : 1) : aVal > bVal ? (sortOrder === "asc" ? 1 : -1) : 0;
-  });
+  if (!sortField) return 0;
+
+  const aVal = a[sortField as keyof Book];
+  const bVal = b[sortField as keyof Book];
+
+  if (aVal < bVal) {
+    if (sortOrder === "asc") {
+      return -1;
+    } else {
+      return 1;
+    }
+  } else if (aVal > bVal) {
+    if (sortOrder === "asc") {
+      return 1;
+    } else {
+      return -1;
+    }
+  } else {
+    return 0;
+  }
+});
+
 
   const currentBooks = sorted.slice((currentPage - 1) * rowsPerPage, currentPage * rowsPerPage);
   const totalPages = Math.ceil(sorted.length / rowsPerPage);
