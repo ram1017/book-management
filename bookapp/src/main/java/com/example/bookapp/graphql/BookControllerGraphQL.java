@@ -3,6 +3,7 @@ package com.example.bookapp.graphql;
 import com.example.bookapp.dto.BookDetailsDto;
 import com.example.bookapp.dto.BookDto;
 import com.example.bookapp.service.BookService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.*;
 import org.springframework.stereotype.Controller;
 
@@ -11,11 +12,9 @@ import java.util.List;
 @Controller
 public class BookControllerGraphQL {
 
-    private final BookService bookService;
+    @Autowired
+    private BookService bookService;
 
-    public BookControllerGraphQL(BookService bookService) {
-        this.bookService = bookService;
-    }
 
     @QueryMapping
     public List<BookDto> allBooks() {
